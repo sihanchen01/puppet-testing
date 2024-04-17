@@ -2,7 +2,7 @@
 ## Trigger Flow
 `(master) site.pp` $\rightarrow$ 
 `(class) default.pp` $\rightarrow$ 
-`(class) remove_file.pp` $\rightarrow$ 
+`(class) remove_file.pp` $\leftarrow$ 
 `(define) delete_file.pp`
 
 ## Reference
