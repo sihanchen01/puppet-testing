@@ -1,0 +1,13 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "centos/7"
+
+  # Bootstrap Puppet
+  config.vm.provision "shell", path: "./bootstrap.sh"
+
+  # Puppet Provision
+#  config.vm.provision "puppet" do |puppet|
+#    puppet.manifests_path = "manifests"
+#    puppet.manifest_file = "default.pp"
+#  end
+
+end
